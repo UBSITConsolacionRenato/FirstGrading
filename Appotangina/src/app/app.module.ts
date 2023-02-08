@@ -7,13 +7,25 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NewComponentComponent } from './components/new-component/new-component.component';
 
 import { LayoutComponent } from './activity2/layout/layout.component';
+import { HeaderComponent } from './Activity3a/header/header.component';
+import { MainComponent } from './Activity3a/main/main.component';
+import { FooterComponent } from './Activity3a/footer/footer.component';
+import { RegistrationComponent } from './Activity3a/registration/registration.component';
+import { AboutComponent } from './Activity3a/about/about.component';
+import { LoginComponent } from './Activity3a/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     NewComponentComponent,
-    LayoutComponent
+    LayoutComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent,
+    RegistrationComponent,
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
