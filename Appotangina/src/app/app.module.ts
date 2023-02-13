@@ -13,6 +13,7 @@ import { FooterComponent } from './Activity3a/footer/footer.component';
 import { RegistrationComponent } from './Activity3a/registration/registration.component';
 import { AboutComponent } from './Activity3a/about/about.component';
 import { LoginComponent } from './Activity3a/login/login.component';
+import { GalleryComponent } from './Components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoginComponent } from './Activity3a/login/login.component';
     FooterComponent,
     RegistrationComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
