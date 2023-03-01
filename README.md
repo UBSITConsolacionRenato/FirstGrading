@@ -1,4 +1,4 @@
-# APPDEV1_IDB1_ConsolacionMidterm 
+
 
 # INTRODUCTION TO APPLICATIONS DEVELOPMENT Repository
         
@@ -8,6 +8,7 @@
     Application/Folder : Appotangina
 
 ## Midterms
+### APPDEV1_IDB1_ConsolacionMidterm 
     March 1, 2023
     Cloned the same reposity and created mid-proj application
     Application/Folder : mid-proj
