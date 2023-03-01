@@ -12,3 +12,6 @@
     March 1, 2023
     Cloned the same reposity and created mid-proj application
     Application/Folder : mid-proj
+    
+    Installed node packages
+    
