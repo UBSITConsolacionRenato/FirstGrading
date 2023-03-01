@@ -5,3 +5,9 @@ npm install -g @angular/cli@latest
 npm install --save-dev @angular/cli@latest
 ng version
 ng update @angular/core @angular/cli
+--after new application is created
+  npm install bootstrap --save
+  npm install jquery --save
+  npm install @popperjs/core --save
+  -- src/angular.json
+    scripts
