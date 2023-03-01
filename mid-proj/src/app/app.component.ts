@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mid-proj';
+  Course = 'APPDEV1';
+  CDesc = 'Introduction to Applications Development';
+  students = [{value:'John Uno'},
+              {value:'James Dos'},
+              {value:'Anna Banana'},
+              {value:'Donna Sana'},
+              {value:'Arla Che'},
+              {value:'Vince Ent'}];
+  student = 'Elizabeth';
 }
