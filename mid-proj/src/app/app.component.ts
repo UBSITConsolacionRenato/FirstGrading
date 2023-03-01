@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'mid-proj';
   Course = 'APPDEV1';
@@ -16,4 +17,10 @@ export class AppComponent {
               {value:'Arla Che'},
               {value:'Vince Ent'}];
   student = 'Elizabeth';
+}
+interface Student{
+  idNumber: string;
+  name: string;
+  dateAdded: Date;
+  course: string;
 }

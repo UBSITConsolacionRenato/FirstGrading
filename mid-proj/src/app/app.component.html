@@ -1,8 +1,18 @@
 <h2>{{Course}}</h2>
   <h4>{{CDesc}}</h4>
-<br>
+
+  <br>
+
 <ul>
   <li *ngFor="let student of students">
-    {{student.value}}
+    {{student.value}}  
   </li>
 </ul>
+
+<br>
+
+<label>Add Student:
+  <input #studentInput>{{studentInput.value}}
+</label>
+
+<br>
