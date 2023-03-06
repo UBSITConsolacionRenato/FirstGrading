@@ -1,8 +1,10 @@
+<!---instantiation of variables-->
 <h2>{{Course}}</h2>
   <h4>{{CDesc}}</h4>
 
-  <br>
+  <br><!--line break-->
 
+<!---->
 <ul>
   <li *ngFor="let student of students">
     {{student.value}}  
@@ -11,6 +13,7 @@
 
 <br>
 
+<!--to add interface-->
 <label>Add Student:
   <input #studentInput>{{studentInput.value}}
 </label>
