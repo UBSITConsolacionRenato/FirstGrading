@@ -4,26 +4,27 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root', //single-quote ('')
   //template and style should be enclosed with backtick(``)
-  template: `
-    <h1>Students</h1>
-    <div class="stud">
-      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let student of students">
-        {{student.value}}
-        </li>  
-      </ul>
-    </div>
-    <br><br>
-    <div class='expressions'>
-      <h3> Expenditure = {{item1 + item2 + item3}}</h3>
-      <h3 *ngFor="let item of Items">{{item.value+item.value+item.value}}</h3> 
-    </div>`,
+  //template: `
+    //<h1>Students</h1>
+    //<div class="stud">
+      //<ul class="list-group">
+        //<li class="list-group-item" *ngFor="let student of students">
+        //{{student.value}}
+        //</li>  
+      //</ul>
+    //</div>
+    //<br><br>
+    //<div class='expressions'>
+      //<h3> Expenditure = {{item1 + item2 + item3}}</h3>
+      //<h3 *ngFor="let item of Items">{{item.value+item.value+item.value}}</h3> 
+    //</div>`,
   //adding of styles for the template
-  styles: ['div.stud {background-color: blue; max-width: 250px; margin: 20px;}',
-          'h1 {padding: 10px; margin: 20px;}',
-          'li {font-weight: bold; font-style: italic; max-width: 300px; text-align: center;}',
-          'ul {padding: 30px;}']
-   
+  //styles: ['div.stud {background-color: blue; max-width: 250px; margin: 20px;}',
+          //'h1 {padding: 10px; margin: 20px;}',
+          //'li {font-weight: bold; font-style: italic; max-width: 300px; text-align: center;}',
+          //'ul {padding: 30px;}']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
