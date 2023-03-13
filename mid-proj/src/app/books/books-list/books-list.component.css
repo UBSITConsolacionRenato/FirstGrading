@@ -1,14 +1,11 @@
 .list-group {
-    background-color: blue; 
-    max-width: 250px;
-    
+    display: inline-block;
 }
 
-.card name-1{
-    width: 400px;
-    
-    
-}
-.group {
+.card-group {
     max-width: fit-content;
+    min-width: fit-content;
+    display: flex;
+    margin-top: -530px;
+    margin-left: 250px;
 }
