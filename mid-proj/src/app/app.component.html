@@ -21,4 +21,32 @@
 
 <br>
 -->
-<app-books-list></app-books-list>
+<!--<app-books-list></app-books-list>-->
+
+<h2>Student List</h2>
+<table class="table table-bordered">
+  <thead>
+      <tr>
+        <th>ID Number</th>
+        <th>Full Name</th>
+        <th>Date Enrolled</th>
+        <th>Course</th>
+        <th>Year Level</th>
+        <th>Contact</th>
+        <th>Birth Date</th>
+        <th>Actions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>{{student.id}}</td>
+        <td>{{student.fname | uppercase}} {{student.lname | uppercase}}</td>
+        <td>{{student.dateEnrolled | date: 'longDate'}}</td>
+        <td>{{student.Course}}</td>
+        <td>{{student.YrLevel}}</td>
+        <td>{{student.contactNum}}</td>
+        <td>{{student.bdate | date: 'longDate'}}</td>
+        <td></td>
+      </tr>      
+  </tbody>
+</table>

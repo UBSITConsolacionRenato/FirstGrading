@@ -1,5 +1,6 @@
 import { style } from '@angular/animations';
 import { Component } from '@angular/core';
+import { Students } from './student';
 
 @Component({
   selector: 'app-root', //single-quote ('')
@@ -31,25 +32,31 @@ export class AppComponent {
   title = 'mid-proj';
   Course = 'APPDEV1';
   CDesc = 'Introduction to Applications Development';
-  students = [{value:'John Uno'},
-              {value:'James Dos'},
-              {value:'Anna Banana'},
-              {value:'Donna Sana'},
-              {value:'Arla Che'},
-              {value:'Vince Ent'}];
-  student = 'Elizabeth';
+  //students = [{value:'John Uno'},
+  //            {value:'James Dos'},
+  //            {value:'Anna Banana'},
+  //            {value:'Donna Sana'},
+  //            {value:'Arla Che'},
+  //            {value:'Vince Ent'}];
+  //student = 'Elizabeth';
   Items = [{value: 100},
            {value: 200},
            {value: 300}];
   item1 = 100;
   item2 = 200;
   item3 = 300;
+
+  student: Students ={
+    id: 20217141,
+    fname: 'Renato',
+    lname: 'Consolacion',
+    Course: 'BSIT',
+    YrLevel: '2',
+    contactNum: '09168711247',
+    dateEnrolled: '2021 05 25',
+    picture: 'picture',
+    bdate: new Date(2003, 1, 19) //date shown in the web has a month added to it i.e. 2003/01/19 becomes 2003/02/19
+  }
 }
 
 //interface
-interface Student{
-  idNumber: string;
-  name: string;
-  dateAdded: Date;
-  course: string;
-}

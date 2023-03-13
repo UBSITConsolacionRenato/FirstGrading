@@ -9,6 +9,8 @@ ng update @angular/core @angular/cli
   npm install bootstrap --save
   npm install jquery --save
   npm install @popperjs/core --save
+  npm i bootstrap-icons --save
+  npm i ngx-bootstrap-icons --save
   -- src/angular.json
     scripts
     
