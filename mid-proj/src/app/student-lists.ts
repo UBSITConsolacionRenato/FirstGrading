@@ -10,7 +10,7 @@ export const STUDENTS: Students[]=[
         YrLevel: '1',
         contactNum: '09187712247',
         dateEnrolled: '2021',
-        picture: 'picture',
+        picture: "assets/profile.png",
         bdate: new Date(2001, 3, 30)
     },
     {
@@ -20,18 +20,18 @@ export const STUDENTS: Students[]=[
         Course: 'BSCpE',
         YrLevel: '3',
         contactNum: '09694325169',
-        dateEnrolled: '2021',
-        picture: 'picture',
+        dateEnrolled: '04/05/2020',
+        picture: "assets/profile.png",
         bdate: new Date(2000, 4, 20)
     }, {
         id: 20210548,
-        fname: 'Nmai',
-        lname: 'Grrtgrrt',
+        fname: 'Nami',
+        lname: 'Deym',
         Course: 'BSIT',
         YrLevel: '2',
         contactNum: '09177461247',
-        dateEnrolled: '2021',
-        picture: 'picture',
+        dateEnrolled: '08/08/2021',
+        picture: "assets/profile.png",
         bdate: new Date(2002, 7, 19)
     },
 ]

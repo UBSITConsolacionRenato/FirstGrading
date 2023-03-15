@@ -9,7 +9,7 @@
 }
 
 .card {
-    
+    height: fit-content;
     margin-right: 1rem;
 }
 
@@ -25,5 +25,6 @@
     max-width: fit-content;
     min-width: max-content;
     margin-left: 250px;
+    margin-top: 20px;
     
 }

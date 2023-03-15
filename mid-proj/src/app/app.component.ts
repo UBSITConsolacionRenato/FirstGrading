@@ -1,6 +1,7 @@
 import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Students } from './student';
+import { STUDENTS } from './student-lists';
 
 @Component({
   selector: 'app-root', //single-quote ('')
@@ -56,6 +57,13 @@ export class AppComponent {
     dateEnrolled: '2021 05 25',
     picture: 'picture',
     bdate: new Date(2003, 1, 19) //date shown in the web has a month added to it i.e. 2003/01/19 becomes 2003/02/19
+  }
+  students=STUDENTS;
+  //click event handler
+  selectedStudent?: Students;
+
+  onSelect(student: Students): void {
+    this.selectedStudent = student;
   }
 }
 

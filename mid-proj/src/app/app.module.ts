@@ -9,7 +9,7 @@ import { UpdateBookComponent } from './books/update-book/update-book.component';
 import { StudentsListComponent } from './students/students-list/students-list.component';
 import { AddStudentComponent } from './students/add-student/add-student.component';
 import { UpdateStudentComponent } from './students/update-student/update-student.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { UpdateStudentComponent } from './students/update-student/update-student
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
