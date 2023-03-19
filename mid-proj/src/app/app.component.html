@@ -21,9 +21,9 @@
 
 <br>
 -->
-<app-books-list></app-books-list>
+<!--<app-books-list></app-books-list>-->
 
-<!--
+
 <div class="container-fluid p-4">
   <h2>Student List</h2>
   <table class="table table-bordered">
@@ -48,9 +48,9 @@
         <td>{{student.YrLevel}}</td>
         <td>{{student.contactNum}}</td>
         <td>{{student.bdate | date: 'shortDate'}}</td>
-        <td>-->
-          <!--VIEW DETAILS--><!--
-          <a type="button" class="text-white" (click)="onSelect(student)"> clickable icons, somehow doesnt show in the web template
+        <td>
+          <!--VIEW DETAILS-->
+          <a type="button" class="text-white" (click)="onSelect(student)"> <!--clickable icons, somehow doesnt show in the web template-->
             <span class="material-symbols-outlined">
               Visilibity
             </span>
@@ -63,8 +63,8 @@
     </tbody>
   </table>
 </div>
--->
-<!--selected student--><!--
+
+<!--selected student-->
 <div class="container-fluid" *ngIf="selectedStudent">
   <div class="py-5 text-center">
     <span class="d-block mx-auto mb-4" alt="" width="100" height="150">
@@ -83,9 +83,9 @@
       Year: {{selectedStudent.YrLevel}}
     </p>
   </div>
--->
+
   <!--student course details-->
-  <!--
+
   <div class="row g-5">
     <div class="col-md-5 col-lg-4 order-md-last">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -98,10 +98,134 @@
             <h6 class="my-0">APPDEV1</h6>
             <small class="text-muted">Brief Description</small>  
           </div>
-          <span class="text-muted">11:00-2:00</span>
+          <span class="text-muted">11:00-2:00 (Face-to-Face)</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">SERADM1</h6>
+            <small class="text-muted">Brief Description</small>  
+          </div>
+          <span class="text-muted">6:30-8:00 (Online)<br>8:00-11:00 (Face-to-Face)</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">SITNET3</h6>
+            <small class="text-muted">Brief Description</small>  
+          </div>
+          <span class="text-muted">11:00-2:00 (Face-to-Face)</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">METHODS1</h6>
+            <small>ADVANCE</small>
+          </div>
+          <span class="text-success">360hrs</span>
         </li>
       </ul>
+
+      <!--forms-->
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Course Code">
+          <button type="submit" class="btn btn-secondary">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-7 col-lg-8" *ngIf="selectedStudent">
+      <h4 class="mb-3">Personal Information</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="selectedStudent.fname" placeholder="firstname">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-control">Last Name</label>
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="selectedStudent.lname" placeholder="lastname" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class=text-muted>(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">[(ngModel)]="selectedStudent.eadd"</div>
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or Suite">
+          </div>
+
+          <div class="col-md-5">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country" required>
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">Province</label>
+            <select class="form-select" id="state" required>
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address">
+          <label class="form-check-label" for="same-address">Shipping Address is the same as my Billing Address</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-info">
+          <label class="form-check-label" for="save-info">Save this information for next time</label>
+        </div>
+      </form>
     </div>
   </div>
-</div>-->
+</div>
 <!--the student list is what shown in the web not the book-list -->
