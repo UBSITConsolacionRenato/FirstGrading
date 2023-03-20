@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, ArrayOfComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BooksListComponent } from './books/books-list/books-list.component';
 import { AddBookComponent } from './books/add-book/add-book.component';
@@ -10,6 +10,8 @@ import { StudentsListComponent } from './students/students-list/students-list.co
 import { AddStudentComponent } from './students/add-student/add-student.component';
 import { UpdateStudentComponent } from './students/update-student/update-student.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ViewDetailsComponent } from './students/view-details/view-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,10 @@ import { FormsModule } from '@angular/forms';
     UpdateBookComponent,
     StudentsListComponent,
     AddStudentComponent,
-    UpdateStudentComponent
+    UpdateStudentComponent,
+    NavbarComponent,
+    ViewDetailsComponent,
+    ArrayOfComponents
   ],
   imports: [
     BrowserModule,

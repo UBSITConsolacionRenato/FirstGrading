@@ -1,44 +1,3 @@
-
-<div class="container-fluid p-4" >
-    <h2>Student List</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th scope="row">ID Number</th>
-                <th scope="row">Full Name</th>
-                <th scope="row">Date Enrolled</th>
-                <th scope="row">Course</th>
-                <th scope="row">Year Level</th>
-                <th scope="row">Contact</th>
-                <th scope="row">Birth Date</th>
-                <th scope="row">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let student of students">
-                <td scope="row" class="fw-bold">{{student.id}}</td>
-                <td>{{student.lname | uppercase}}, {{student.fname}}</td>
-                <td>{{student.dateEnrolled | date: 'longDate'}}</td>
-                <td>{{student.Course}}</td>
-                <td>{{student.YrLevel}}</td>
-                <td>{{student.contactNum}}</td>
-                <td>{{student.bdate | date: 'shortDate'}}</td>
-                <td>
-                    <!--VIEW DETAILS-->
-                    <a type="button" class="text-black" (click)="onSelect(student)" routerLink="viewdetails"> <!--clickable icons, somehow doesnt show in the web template-->
-                        <span class="material-symbols-outlined">
-                            View
-                        </span>
-                    </a>
-                    <span class="material-symbols-outlined">
-                        Delete
-                    </span>
-                </td>
-            </tr> 
-        </tbody>
-    </table>
-</div>
-
   
 <!--selected student-->
 <div class="container-fluid" *ngIf="selectedStudent">
@@ -204,5 +163,3 @@
         </div>
     </div>
 </div>
-
-<!-- same content on the view-details component -->

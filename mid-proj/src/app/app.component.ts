@@ -40,7 +40,7 @@ export class AppComponent {
   //            {value:'Arla Che'},
   //            {value:'Vince Ent'}];
   //student = 'Elizabeth';
-  Items = [{value: 100},
+  /*Items = [{value: 100},
            {value: 200},
            {value: 300}];
   item1 = 100;
@@ -64,7 +64,7 @@ export class AppComponent {
 
   onSelect(student: Students): void {
     this.selectedStudent = student;
-  }
+  }*/
 }
 
 //interface

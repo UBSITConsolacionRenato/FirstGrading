@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { Students } from 'src/app/student';
 import { STUDENTS } from 'src/app/student-lists';
-import { ViewDetailsComponent } from '../view-details/view-details.component';
+import { StudentsListComponent } from '../students-list/students-list.component';
 
 @Component({
-  selector: 'app-students-list',
-  templateUrl: './students-list.component.html',
-  styleUrls: ['./students-list.component.css']
+  selector: 'app-view-details',
+  templateUrl: './view-details.component.html',
+  styleUrls: ['./view-details.component.css']
 })
-export class StudentsListComponent {
+export class ViewDetailsComponent {
   title = 'mid-proj';
   Course = 'APPDEV1';
   CDesc = 'Introduction to Applications Development';
@@ -43,5 +43,6 @@ export class StudentsListComponent {
 
   onSelect(student: Students): void {
     this.selectedStudent = student;
+    
   }
 }
