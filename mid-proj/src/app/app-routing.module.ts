@@ -11,6 +11,7 @@ const routes: Routes = [
   {path: 'books', component: BooksListComponent},
   {path: 'students', component: StudentsListComponent},
   {path: 'viewdetails/:id', component: ViewDetailsComponent},
+  {path: 'viewdetails', component: ViewDetailsComponent},   //this was added to have some reference for the presentation online 
   {path: '', redirectTo: '/books', pathMatch: 'full'}
 
 ];

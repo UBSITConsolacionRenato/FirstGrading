@@ -19,7 +19,7 @@ export class ViewDetailsComponent {
   //            {value:'Arla Che'},
   //            {value:'Vince Ent'}];
   //student = 'Elizabeth';
-  Items = [{value: 100},
+  /*Items = [{value: 100},
            {value: 200},
            {value: 300}];
   item1 = 100;
@@ -36,7 +36,7 @@ export class ViewDetailsComponent {
     dateEnrolled: '2021 05 25',
     picture: 'picture',
     bdate: new Date(2003, 1, 19) //date shown in the web has a month added to it i.e. 2003/01/19 becomes 2003/02/19
-  }
+  }*/
   students=STUDENTS;
   //click event handler
   selectedStudent?: Students;
