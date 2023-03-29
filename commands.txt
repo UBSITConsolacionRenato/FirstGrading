@@ -16,3 +16,12 @@ ng g c (ComponentName) --to create new component for the created/existing applic
   -- src/angular.json
     scripts
     
+
+---TO CREATE---
+admin powershell
+  -- set-executionpolicy unrestricted
+  -- npm install -g @angular/cli@latest
+  -- npm cache clean
+vscode
+  -- repository folder
+  -- npm install -g @angular/cli@latest
