@@ -5,6 +5,8 @@ npm install -g @angular/cli@latest
 npm install --save-dev @angular/cli@latest
 ng version
 ng update @angular/core @angular/cli
+ng new (AppName) --to create new application
+ng g c (ComponentName) --to create new component for the created/existing application
 --after new application is created
   npm install bootstrap --save
   npm install jquery --save
